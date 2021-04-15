@@ -1,4 +1,4 @@
-import { Link, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 interface SlideProps {
   img: string;
@@ -8,7 +8,7 @@ interface SlideProps {
 
 export function Slide({ img, title, description }: SlideProps) {
   return (
-    <Link 
+    <Box 
       position="relative"
     >
       <img src={img} alt={title} />
@@ -29,6 +29,6 @@ export function Slide({ img, title, description }: SlideProps) {
           {description}
         </Text>
       </Flex>
-    </Link>
+    </Box>
   )
 }

@@ -1,17 +1,21 @@
-import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
-import { Items } from "../components/Items";
+import { Icons } from "../components/Icons";
 import { Navigation } from "../components/Navigation";
 
 export default function Home() {
   return (
-    <Box>
+    <>
+      <Head>
+        <title>Worldtrip</title>
+      </Head>
+
       <Header />
       <Banner />
-      <Items />
+      <Icons />
       <Navigation />
-    </Box>
+    </>
   )
 }

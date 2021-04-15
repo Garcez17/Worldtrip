@@ -1,10 +1,10 @@
-import { Flex } from "@chakra-ui/react";
-import SwiperCore, { EffectFade } from 'swiper'
+import { Box, Flex } from "@chakra-ui/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import Link from 'next/link';
 import { Slide } from "./Slide";
 
-SwiperCore.use([EffectFade]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export function Slides() {
   return (
@@ -17,18 +17,20 @@ export function Slides() {
           prevEl: ".swiper-button-prev",
         }}
         pagination={{ clickable: true, type: "bullets" }}
-        scrollbar={{ draggable: true }}
         parallax={true}
         loop
         autoplay={{
-          delay: 2000,
+          delay: 5000,
         }}
       >
+        <Box className="swiper-button-prev" color="yellow.500" />
+        <Box className="swiper-button-next" color="yellow.500" />
+
         <SwiperSlide>
-          <Link href="/continentes/europe">
+          <Link href="/europe">
             <a>
               <Slide 
-                img="/europe.png" 
+                img="/continents/europe.png" 
                 title="Europa" 
                 description="O continente mais antigo." 
               />
@@ -37,10 +39,10 @@ export function Slides() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link href="/continentes/northamerica">
+          <Link href="/northamerica">
             <a>
               <Slide 
-                img="/america.jpg" 
+                img="/continents/northamerica.jpg" 
                 title="América do Norte" 
                 description="O continente mais antigo." 
               />
@@ -49,10 +51,10 @@ export function Slides() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link href="/continentes/southamerica">
+          <Link href="/southamerica">
             <a>
               <Slide 
-                img="/southamerica.jpg" 
+                img="/continents/southamerica.jpg" 
                 title="América do Sul" 
                 description="O continente mais antigo." 
               />
@@ -61,10 +63,10 @@ export function Slides() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link href="/continentes/africa">
+          <Link href="/africa">
             <a>
               <Slide 
-                img="/africa.jpg" 
+                img="/continents/africa.jpg" 
                 title="Africa" 
                 description="O continente mais antigo." 
               />
@@ -73,10 +75,10 @@ export function Slides() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Link href="/continentes/asia">
+          <Link href="/asia">
             <a>
               <Slide 
-                img="/asia.jpg" 
+                img="/continents/asia.jpg" 
                 title="Ásia" 
                 description="O continente mais antigo." 
               />
@@ -85,10 +87,10 @@ export function Slides() {
         </SwiperSlide>
         
         <SwiperSlide>
-          <Link href="/continentes/oceania">
+          <Link href="/oceania">
             <a>
               <Slide 
-                img="/oceania.jpg" 
+                img="/continents/oceania.jpg" 
                 title="Ocêania" 
                 description="O continente mais antigo." 
               />

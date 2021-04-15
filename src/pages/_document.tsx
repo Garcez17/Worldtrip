@@ -11,9 +11,9 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link
-           rel="stylesheet"
-           href="https://unpkg.com/swiper/swiper-bundle.min.css"
-         />
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+          />
         </Head>
         <body>
           <Main />

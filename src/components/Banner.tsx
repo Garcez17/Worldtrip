@@ -28,7 +28,7 @@ export function Banner() {
 
       <Image
         transform="rotate(3deg)"
-        src="/airplane.svg"
+        src="/icons/airplane.svg"
         alt="Logo"
         pos="absolute"
         right="36"
