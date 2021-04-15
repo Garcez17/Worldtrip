@@ -34,9 +34,10 @@ export default function Continent({ continent }: ContinentProps) {
       <ContinentBanner name={continent.name} img={continent.bannerImg} />
       <Flex
         as="article"
-        pl={36}
-        pr={20}
-        py={20}
+        pl={["7", "16", "16", "36"]}
+        pr={["7", "16", "16", "20"]}
+        py={["10", "10", "10", "20"]}
+        flexDir={['column-reverse', 'column-reverse', 'row']}
       >
         <Text
           flex="1"
@@ -49,9 +50,10 @@ export default function Continent({ continent }: ContinentProps) {
 
         <SimpleGrid 
           gap="2"
-          minChildWidth="100px"
+          minChildWidth="200px"
           flex="1"
-          ml={16}
+          ml={["0", "0", "12", "16"]}
+          mb={["12", "12", "0"]}
         >
           <InfoCountry value={continent.countries}>
             países
@@ -68,7 +70,7 @@ export default function Continent({ continent }: ContinentProps) {
       </Flex>
       <Box
         as="section"
-        px={36}
+        px={["7", "16", "16", "36"]}
       >
         <Heading
           fontSize="4xl"

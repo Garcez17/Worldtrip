@@ -17,6 +17,7 @@ export function CityBox({ city, country, flag, img }: CountryBoxProps) {
       borderWidth="1px"
       borderColor="yellow.500"
       flexDir="column"
+      mx="auto"
     >
       <Image 
         src={`/cities/${img}`}

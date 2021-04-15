@@ -8,7 +8,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export function Slides() {
   return (
-    <Flex maxWidth={1240} height={450} mb="20" mx="auto">
+    <Flex w="100%" height={[250, 450]} mb="20" mx="auto">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -30,7 +30,7 @@ export function Slides() {
           <Link href="/europe">
             <a>
               <Slide 
-                img="/continents/europe.png" 
+                img="/continents/europe.jpg" 
                 title="Europa" 
                 description="O continente mais antigo." 
               />
@@ -44,7 +44,7 @@ export function Slides() {
               <Slide 
                 img="/continents/northamerica.jpg" 
                 title="América do Norte" 
-                description="O continente mais antigo." 
+                description="A terra da oportunidade." 
               />
             </a>
           </Link>
@@ -56,7 +56,7 @@ export function Slides() {
               <Slide 
                 img="/continents/southamerica.jpg" 
                 title="América do Sul" 
-                description="O continente mais antigo." 
+                description="O mais ensolarado dos continentes." 
               />
             </a>
           </Link>
@@ -68,7 +68,7 @@ export function Slides() {
               <Slide 
                 img="/continents/africa.jpg" 
                 title="Africa" 
-                description="O continente mais antigo." 
+                description="Onde tudo começou." 
               />
             </a>
           </Link>
@@ -80,7 +80,7 @@ export function Slides() {
               <Slide 
                 img="/continents/asia.jpg" 
                 title="Ásia" 
-                description="O continente mais antigo." 
+                description="As civilizações mais antigas." 
               />
             </a>
           </Link>
@@ -92,7 +92,7 @@ export function Slides() {
               <Slide 
                 img="/continents/oceania.jpg" 
                 title="Ocêania" 
-                description="O continente mais antigo." 
+                description="O maior arquipélago do mundo." 
               />
             </a>
           </Link>

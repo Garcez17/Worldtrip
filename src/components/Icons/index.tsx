@@ -4,16 +4,15 @@ import { Icon } from "./Icon";
 export function Icons() {
   return (
     <Flex
-      h="80"
+      minH="80"
       flexDir="column"
-      px={36}
+      px={["7", "16", "16", "36"]}
+      mt={["24", "0"]}
     >
       <SimpleGrid
-        flex="1"
         gap="4"
         my="auto"
         minChildWidth="160px"
-        align="flex-start"
       >
         <Icon icon="cocktail">
           vida noturna
@@ -40,7 +39,8 @@ export function Icons() {
         h="1"
         alignSelf="center"
         w="90px" 
-        bg="gray.500" 
+        bg="gray.500"
+        mt={["16", "0"]}
       />
     </Flex>
   )

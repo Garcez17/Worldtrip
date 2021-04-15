@@ -10,7 +10,7 @@ export function ContinentBanner({ name, img }: ContinentBannerProps) {
     <Flex
       backgroundImage={`url('/continents/banners/${img}')`}
       h="lg"
-      px={36}
+      pl={["7", "16", "16", "36"]}
       py={12}
       pos="relative"
       align="flex-end"

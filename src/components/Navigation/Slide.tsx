@@ -14,18 +14,18 @@ export function Slide({ img, title, description }: SlideProps) {
       <img src={img} alt={title} />
     
       <Flex 
-        w={1240}
+        w="100%"
         position="absolute"
-        top="180"
+        top={["24", "180"]}
         left="0"
         flexDir="column"
         justify="center"
         align="center"
       >
-        <Heading color="gray.50" fontSize="6xl">
+        <Heading color="gray.50" fontSize={["2xl", "4xl", "6xl"]}>
           {title}
         </Heading>
-        <Text color="gray.50" fontSize="4xl">
+        <Text color="gray.50" fontSize={["xl", "2xl", "4xl"]}>
           {description}
         </Text>
       </Flex>

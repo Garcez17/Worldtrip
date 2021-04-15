@@ -13,7 +13,7 @@ export function Header () {
       maxWidth={1480}
       align="center"
       justify="center"
-      px={36}
+      px={["7", "16", "16", "36"]}
     >
       <Link href="/">
         <a>

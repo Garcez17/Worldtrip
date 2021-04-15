@@ -6,6 +6,7 @@ export function Navigation() {
     <Flex
       mt="14"
       flexDir="column"
+      px={["0", "7"]}
     >
       <Heading
         mx="auto"
